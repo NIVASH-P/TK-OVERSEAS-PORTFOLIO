@@ -1,0 +1,14 @@
+
+.pre-loader {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pre-loader-img {
+    height: 300px;
+    width: 300px;
+}
