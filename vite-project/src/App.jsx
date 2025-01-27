@@ -4,12 +4,14 @@ import HomePage from "./components/Home/HomePage"
 import Navbar from "./components/Navbar/Navbar"
 
 function App() {
+    return (
     <Router>
         <Navbar />
         <Routes>
             <Route path="/" element={<HomePage />} />
         </Routes>
     </Router>
+    )
 }
 
 export default App
