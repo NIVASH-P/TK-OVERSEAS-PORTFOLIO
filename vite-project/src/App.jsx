@@ -1,15 +1,28 @@
-import React from "react"
-import { Routes, BrowserRouter as Router, Route } from "react-router-dom"
-import HomePage from "./components/Home/HomePage"
-import Navbar from "./components/Navbar/Navbar"
+import React from 'react'
+import { Routes, BrowserRouter as Router, Route } from 'react-router-dom'
+import HomePage from './components/Home/HomePage'
+import Navbar from './components/Navbar/Navbar'
+import PreLoader from './components/pre_loader/PreLoader'
 
 function App() {
-    <Router>
-        <Navbar />
-        <Routes>
+  const [loading, isLoading] = React.useState(true)
+  setTimeout(()=>{
+    isLoading(false)
+  }, 2000)
+  return (
+    <>
+      {loading && <PreLoader />}
+      {!loading && (
+        <Router>
+          <Navbar />
+          <Routes>
             <Route path="/" element={<HomePage />} />
-        </Routes>
-    </Router>
+            <Route path="/preloader" element={<PreLoader />} />
+          </Routes>
+        </Router>
+      )}
+    </>
+  )
 }
 
 export default App
