@@ -3,6 +3,7 @@ import { Routes, BrowserRouter as Router, Route } from 'react-router-dom'
 import HomePage from './components/Home/HomePage'
 import Navbar from './components/Navbar/Navbar'
 import PreLoader from './components/pre_loader/PreLoader'
+import AboutMe from "./components/AboutUs/AboutUs";
 
 function App() {
   const [loading, isLoading] = React.useState(true)
@@ -18,6 +19,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/preloader" element={<PreLoader />} />
+             <Route path="/aboutus" element={<AboutMe />} />
           </Routes>
         </Router>
       )}
