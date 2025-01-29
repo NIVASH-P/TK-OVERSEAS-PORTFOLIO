@@ -1,9 +1,243 @@
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.aboutus-scoped {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.aboutus {
+  width: 100vw;
+  height: 100vh;
+}
+
+.aboutus-roller {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-items: start;
+  animation: rotate 20s linear infinite; /* Apply the rotation animation */
+}
+
 .aboutus-container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  background-color: #06223a;
+  width: 100%;
+  height: 100%;
 }
+
+.image {
+  position: relative; /* Ensure the image container is the reference for absolute positioning */
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease-in-out; /* Add transition effect */
+  animation: slideInFromLeft 1s ease-out; /* Apply the animation */
+}
+
 .aboutus-content {
-  width: 50%;
+  font-family: Space Grotesk, sans-serif;
+  width: 30%;
+  letter-spacing: 1px;
+}
+
+.aboutus-heading {
+  font-size: 1.5em;
+  color: #ffffff; /* Text color */
+  background-color: #17367c; /* Background color */
+  padding: 10px; /* Optional: Add some padding */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  text-align: start; /* Optional: Center the text */
+  display: inline-block;
+}
+
+.aboutus-description {
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  word-spacing: 2;
+}
+
+.aboutus-job {
+  color: #2567ff;
+}
+
+.aboutus-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1rem;
+  line-height: 30px;
+}
+
+.aboutus-button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 8px;
+  background-color: #0782ff;
+  color: white;
+  padding: 20px;
+  font-weight: 200;
+  font-size: 1em;
+  border-radius: 25px;
+  border-color: transparent;
+}
+
+.aboutus-button:hover {
+  background-color: black;
+  transition: 0.5s;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  gap: 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  border-radius: 10px;
+  padding: 20px;
+  width: 30%; /* Fixed width */
+  height: 150px; /* Fixed height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center; /* Center the text */
+  color: #ffffff; /* Text color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+
+.card h3 {
+  /* gap: 5px; */
+  margin: 0;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-number {
+  font-size: 1.5em; /* Larger font size for the number */
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1em; /* Regular font size for the text */
+}
+.image-card {
+  width: 400px; /* Set fixed width */
+  height: 450px; /* Set fixed height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hide overflow to ensure the image fits inside */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+  background-color: #fff; /* Optional: Set background color */
+}
+
+.image {
+  width: 400px; /* Set fixed width */
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .image img {
+  max-width: 100%;
+  max-height: 200%;
+  object-fit: contain;
+} */
+
+/* Media Queries */
+
+/* For tablets */
+@media (min-width: 601px) and (max-width: 1023px) {
+  .aboutus-roller {
+    display: none;
+  }
+  .aboutus-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: auto; /* Adjust height to fit content */
+    padding: 20px; /* Add padding to prevent content from touching edges */
+  }
+
+  .aboutus-content {
+    width: 80%;
+  }
+
+  .card-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    height: auto; /* Adjust height to fit content */
+    margin-bottom: 20px; /* Add margin between cards */
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 600px) {
+  .aboutus-roller {
+    display: none;
+  }
+  .aboutus-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: auto; /* Adjust height to fit content */
+    padding: 20px; /* Add padding to prevent content from touching edges */
+  }
+
+  .aboutus-content {
+    width: 90%;
+  }
+
+  .card-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    height: auto; /* Adjust height to fit content */
+    margin-bottom: 20px; /* Add margin between cards */
+  }
 }
