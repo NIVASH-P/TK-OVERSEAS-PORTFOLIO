@@ -1,23 +1,86 @@
-.contact{
-
+.contact {
+    background: linear-gradient(90deg, rgb(7, 35, 59) 0%,rgb(4, 27, 48) 57%,rgb(4, 12, 22) 100%);
+    height: 100%;
+    /* background: -moz-linear-gradient(90deg, hsla(247, 60%, 21%, 1) 0%, hsla(244, 57%, 17%, 1) 57%, hsla(0, 2%, 11%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(247, 60%, 21%, 1) 0%, hsla(244, 57%, 17%, 1) 57%, hsla(0, 2%, 11%, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1C1554", endColorstr="#161345", GradientType=1); */
 }
+
 .contact-main{
     border: 1px solid blue;
-    border-radius: 20px;
-    margin: 8% 8% ;
-    padding: 10px 3%;
+    border-radius: 10px;
+    margin: 5% 8% ;
+    
+    padding-bottom: 0%;
+    background-color: rgb(5, 51, 92);
 }
 .row{
     display: flex;
-
+    padding: 2% 5%;
 }
 .col1
 {
-      flex-basis: 30%;
+      flex-basis: 33%;
+      margin-top: -20%;
 }
 .col2{
-    flex-basis: 70%;
+
+    flex-basis: 67%;
+    
+    
 }
+.col1 img{
+    margin-top: 12%;
+    /* padding-right: 10%; */
+    height:45%;
+    width: 90%;
+    border-radius: 30px;
+    margin-bottom: 12%;
+}
+.col1 p{
+    color: #ababab;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: 0; /* Remove default margins */
+    /* padding: 0;  */
+}
+.col1 h3{
+    font-size: 25px;
+    margin: 4% 0%; /* Remove default margins */
+    /* padding: 0;  */
+}
+.social {
+    display: flex;
+    gap: 15px; /* Space between icons */
+    /* justify-content: center; Center the icons */
+    /* align-items: center; Vertically align icons */
+
+}
+
+.social .icon {
+    margin: 3% ;
+    font-size: 45px; /* Base size for icons */
+    color: #fff; /* Icon color */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth scaling and color transition */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.social .icon:hover {
+    transform: scale(1.3); /* Increase size on hover */
+    color: #00bcd4; /* Change color on hover (optional) */
+}
+
+.head-name{
+    background: linear-gradient(90deg, rgb(7, 35, 59) 0%,rgb(4, 27, 48) 57%,rgb(1, 21, 46) 100%);
+    background-color: rgb(5, 27, 49);
+    border-radius: 10px 10px 0 0;
+    width:65.6%;
+    height: 200px;
+    margin: 0;
+    margin: -2.7% 0 0 -0.5% ;
+    padding: 2% 0 0 35%;
+}
+
 .head-name h1{
     font-size: 38px;
     font-weight: 600;
@@ -29,20 +92,109 @@
     font-size: 17px;
     font-weight: 650;
     margin-top: -20px;
+    color: #ababab;;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 .form{
-    margin-top: 13%;
-    display: grid;
+    margin: 10% 5%;
+    /* display: griurl(c:/Users/Asus/Downloads/download.jpg)d; */
 }
-.form input{
+.form .flex{
+    display: flex;
+   gap: 10%;
+}
+.form input {
     width: 100%;
-    border: 0;
-    outline: none;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 6px;
+    background: linear-gradient(90deg, rgb(18, 58, 96) 0%,rgb(7, 59, 107) 57%,rgb(3, 44, 93) 100%);
+    /* background-color: rgb(18, 58, 96); */
+    border: 0.5px solid white; /* Thin white border */
+    outline: none; /* Remove default outline */
+
+}
+
+.form label{
+    font-weight: 600;
+    font-size: 14px;
+    color: #ababab;
+}
+.form textarea
+{
+    width: 100%;
     padding: 15px;
     margin: 15px 0;
     color: #fff;
     font-size: 18px;
     border-radius: 6px;
+    background: linear-gradient(90deg, rgb(18, 58, 96) 0%,rgb(7, 59, 107) 57%,rgb(3, 44, 94) 100%);
+    border: 0.5px solid white; /* Thin white border */
+    outline: none; /* Remove default outline */
+}
+.form button {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold; /* Optional for a stronger button text appearance */
+    border-radius: 50px;
+    background-color: rgb(20, 78, 187);
+    border: none;
+    outline: none; /* Remove default outline */
+    cursor: pointer; /* Show pointer cursor for buttons */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.form button:hover {
+    background-color: black; /* Button turns black on hover */
+    transform: scale(1.02); /* Optional subtle scaling effect */
+}
+
+.form button:focus {
+    outline: 2px solid rgba(255, 255, 255, 0.5); /* Subtle white outline on focus */
+    background-color: rgb(16, 65, 150); /* Slightly darker shade on focus */
+}
+@media screen and (max-width: 768px) {
+    .row{
+        display: grid;
+        margin-top: 10%;
+    }
+    img{
+        align-items: center;
+        margin-left: 5%;
+    }
+    .head-name h1{
+        font-size: 35px;
+        text-align: center;
+        margin-left: -50%;
+
+    }
+    .head-name p{
+        font-size: 15px;
+        text-align: center;
+        margin-left: -50%;
+
+    }
+    .col1 h3 {
+       font-size: 20px;
+    }
+    .col1 p {
+       font-size: 15px;
+    }
+    .col1 .social {
+       font-size: 10px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .head-name h1{
+        margin-left: 5%;
+    }
+    .head-name p{
+        margin: 0 5%;
+    }
 }
