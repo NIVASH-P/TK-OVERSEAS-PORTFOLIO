@@ -5,6 +5,7 @@ import Navbar from './components/Navbar/Navbar'
 import PreLoader from './components/pre_loader/PreLoader'
 import AboutMe from "./components/AboutUs/AboutUs";
 import FeaturePage from "./components/Features/FeaturePage"
+import ServicePage from './components/Services/ServicePage'
 
 function App() {
   const [loading, isLoading] = React.useState(true)
@@ -22,6 +23,7 @@ function App() {
             <Route path="/preloader" element={<PreLoader />} />
             <Route path="/feature" element={<FeaturePage />}/> 
              <Route path="/aboutus" element={<AboutMe />} />
+             <Route path="/services" element={<ServicePage />} />
           </Routes>
         </Router>
       )}
