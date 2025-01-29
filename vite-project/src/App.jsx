@@ -5,6 +5,8 @@ import Navbar from './components/Navbar/Navbar'
 import PreLoader from './components/pre_loader/PreLoader'
 import AboutMe from "./components/AboutUs/AboutUs";
 import FeaturePage from "./components/Features/FeaturePage"
+import Contact from './components/Contact/Contact'
+import Experience from './components/Experience/Experience'
 import ServicePage from './components/Services/ServicePage'
 
 function App() {
@@ -21,8 +23,10 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/preloader" element={<PreLoader />} />
+            <Route path='/contact' element={<Contact/>}/>
             <Route path="/feature" element={<FeaturePage />}/> 
              <Route path="/aboutus" element={<AboutMe />} />
+             <Route path="/experience" element={<Experience/>}/>
              <Route path="/services" element={<ServicePage />} />
           </Routes>
         </Router>
