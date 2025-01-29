@@ -21,7 +21,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/preloader" element={<PreLoader />} />
             <Route path="/feature" element={<FeaturePage />}/> 
-             <Route path="/aboutus" element={<AboutMe />} />
+            <Route path="/aboutus" element={<AboutMe />} />
           </Routes>
         </Router>
       )}
