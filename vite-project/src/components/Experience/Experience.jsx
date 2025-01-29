@@ -79,13 +79,13 @@ const Experience = () => {
               <div className="timeline-content">
                 <h3>{title}</h3>
                 <h4>{company}</h4>
-                <div className="technologies">
+                {/* <div className="technologies">
                   {technologies.map((tech, i) => (
                     <span key={i} className="tech">
                       {tech}
                     </span>
                   ))}
-                </div>
+                </div> */}
                 <p className="duration">{duration}</p>
               </div>
             </div>
