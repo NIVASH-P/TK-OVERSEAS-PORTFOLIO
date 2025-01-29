@@ -27,6 +27,7 @@
 .aboutus {
   width: 100vw;
   height: 100vh;
+ padding-top: 6% ;
 }
 
 .aboutus-roller {
@@ -60,6 +61,7 @@
 }
 
 .aboutus-content {
+  /* padding-top: 10%; */
   font-family: Space Grotesk, sans-serif;
   width: 30%;
   letter-spacing: 1px;

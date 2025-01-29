@@ -46,9 +46,9 @@ const FeaturePage = () => {
     },
     {
       image: award2,
-      title: 'Award 5',
-      description: 'Description for Award 5',
-      detail: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
+      title: 'Business flash Award',
+      description: 'Recognition Growth',
+      detail: 'I’m beyond excited to receive the Best Business Flash gift from JCOM 2.0L Namakkal for the third consecutive time – a true hat-trick win! 🏆✨ Today was more than just recognition; it was an opportunity for deep reflection on the principles of KYC: Know Your Competitors, Know Your Challenge, Know Your Capacity, Know Your Cost of Business, Know Your Courage, and Know Your Customers. These values guide me in overcoming obstacles, optimizing strengths, and making bold decisions. I’m incredibly grateful to JCOM Namakkal for this honor and the platform to grow, connect, and inspire. Here’s to even greater achievements ahead!',
     },
     {
       image: ForeignUniversity2,

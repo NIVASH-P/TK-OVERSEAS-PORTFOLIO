@@ -1,7 +1,7 @@
 .ex{
   background: linear-gradient(90deg, rgb(5, 41, 73) 0%,rgb(4, 27, 48) 57%,rgb(4, 12, 22) 100%);
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
 }
 .timeline-container {
   max-width: 900px;

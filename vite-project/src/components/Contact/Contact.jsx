@@ -10,6 +10,7 @@ import img from "./img.jpg";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import XIcon from '@mui/icons-material/X';
 
 const Contact = () => {
   return (
@@ -22,17 +23,23 @@ const Contact = () => {
             </div>
             <div className="row">
                <div className="col1">
-                   <img src={img} alt="" />
+                   <img className='contact-img' src='/images/blured2.png' alt="" />
                    <p>Write an e-mail</p>
-                   <h3>sample@domain.com</h3>
+                   <h3>rameshnri88@gmail.com</h3>
                    <p>write a message</p>
-                   <h3>+044 9696 9696 3636</h3>
+                   <h3>+91 9884860808 (Office)</h3>
+                   <h3>+91 9597927768 (Personal)</h3>
                    <div className="social">
-
-                    <FacebookIcon className='icon'/>
+                   <a target="_blank" href="https://x.com/rameshraju17014">
+                    <XIcon fontSize='medium' className='icon'/>
+                  </a>
+                   <a target="_blank" href="https://www.instagram.com/tkoverseas">
                     <InstagramIcon className='icon'/>
-                    
+                  </a>
+                   <a target="_blank" href="https://www.linkedin.com/in/ramesh-raju-428114172">
                     <LinkedInIcon className='icon'/>
+                  </a>
+                    
                       
                    </div>
                </div>

@@ -1,17 +1,19 @@
 .contact {
     background: linear-gradient(90deg, rgb(7, 35, 59) 0%,rgb(4, 27, 48) 57%,rgb(4, 12, 22) 100%);
-    height: 100%;
+   
+    height: 140vh;
+    padding-top: 4%;
     /* background: -moz-linear-gradient(90deg, hsla(247, 60%, 21%, 1) 0%, hsla(244, 57%, 17%, 1) 57%, hsla(0, 2%, 11%, 1) 100%);
     background: -webkit-linear-gradient(90deg, hsla(247, 60%, 21%, 1) 0%, hsla(244, 57%, 17%, 1) 57%, hsla(0, 2%, 11%, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1C1554", endColorstr="#161345", GradientType=1); */
 }
 
 .contact-main{
-    border: 1px solid blue;
+
     border-radius: 10px;
-    margin: 5% 8% ;
-    
-    padding-bottom: 0%;
+    margin: 10% 8% ;
+    /* padding-top: 10%; */
+    border: 1px solid blue;
     background-color: rgb(5, 51, 92);
 }
 .row{
@@ -59,7 +61,7 @@
 
 .social .icon {
     margin: 3% ;
-    font-size: 45px; /* Base size for icons */
+    /* font-size: 45px; Base size for icons */
     color: #fff; /* Icon color */
     transition: transform 0.3s ease, color 0.3s ease; /* Smooth scaling and color transition */
     cursor: pointer; /* Pointer cursor on hover */
@@ -155,11 +157,17 @@
     transform: scale(1.02); /* Optional subtle scaling effect */
 }
 
+.contact-img {
+    object-fit: cover;
+}
+
+
+
 .form button:focus {
     outline: 2px solid rgba(255, 255, 255, 0.5); /* Subtle white outline on focus */
     background-color: rgb(16, 65, 150); /* Slightly darker shade on focus */
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .row{
         display: grid;
         margin-top: 10%;
@@ -189,12 +197,58 @@
     .col1 .social {
        font-size: 10px;
     }
+    .contact{
+        height: 240vh;
+    }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px){
-    .head-name h1{
+
+@media screen and (min-width: 600px) and (max-width: 768px)
+{
+    .row{
+        display: grid;
+        margin-top: 10%;
+    }
+    img{
+        align-items: center;
         margin-left: 5%;
     }
+    .head-name h1{
+        font-size: 35px;
+        text-align: center;
+        margin-left: -50%;
+
+    }
     .head-name p{
-        margin: 0 5%;
+        font-size: 15px;
+        text-align: center;
+        margin-left: -50%;
+
+    }
+    .col1 h3 {
+       font-size: 20px;
+    }
+    .col1 p {
+       font-size: 15px;
+    }
+    .col1 .social {
+       font-size: 10px;
+    }
+    .contact{
+        height: 300vh;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+   
+    .head-name h1{
+        margin-left: 15%;
+        margin-top: -5%;
+    }
+    .head-name p{
+        margin: 0 15%;
+        font-size: 15px;
+
+    }
+    .contact{
+        height: 150vh;
     }
 }
