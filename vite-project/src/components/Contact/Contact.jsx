@@ -18,8 +18,8 @@ const Contact = () => {
 
         <div className='contact-main'>
         <div className="head-name">
-                  <h1>Let’s Discuss Your Project</h1>
-                  <p>Always available for freelancing if the right project comes along,<br /> Feel free to contact me.</p>
+                  <h1>Let’s Discuss</h1>
+                  <p>Always available for Carreer Conselling if the right project comes along,<br /> Feel free to contact me.</p>
             </div>
             <div className="row">
                <div className="col1">
