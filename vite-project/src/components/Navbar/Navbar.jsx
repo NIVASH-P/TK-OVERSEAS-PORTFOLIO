@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Navbar.css'
 import MenuIcon from '@mui/icons-material/Menu'
-import { useNavigate } from 'react-router-dom'
 
 /**
  * @author
@@ -11,7 +10,6 @@ import { useNavigate } from 'react-router-dom'
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false)
   const [sidebar, setSidebar] = useState(false)
-  const nav = useNavigate()
 
   // Scroll listener to add/remove 'scrolled' class
   useEffect(() => {
@@ -35,27 +33,27 @@ const Navbar = () => {
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <img src="/images/R_logo.png" alt="Ramesh Logo" className="nav-logo" />
         <ul className={`nav-items ${sidebar ? 'show-nav-items' : ''}`}>
-          <li className="nav-item" onClick={() => nav('/')}>
-            Home
+          <li className="nav-item">
+            <a href='#home'>Home</a>
           </li>
-          <li className="nav-item" onClick={() => nav('/about')}>
-            About
+          <li className="nav-item">
+              <a href='#about'>About</a>
           </li>
-          <li className="nav-item" onClick={() => nav('/service')}>
-            Services
+          <li className="nav-item">
+              <a href='#award'>Awards</a>
           </li>
-          <li className="nav-item" onClick={() => nav('/award')}>
-            Awards
+          <li className="nav-item">
+              <a href='#service'>Services</a>
           </li>
-          <li className="nav-item" onClick={() => nav('/contact')}>
-            Contact
+          <li className="nav-item">
+              <a href='#contact'>Contact</a>
           </li>
-          <button className="btn-lets-talk" onClick={() => nav('/contact')}>
+          <a className="btn-lets-talk" href='#contact'>
             Lets&apos; Talk
-          </button>
+          </a>
         </ul>
-        <button className="hamburger" onClick={() => setSidebar(!sidebar)}>
-          <MenuIcon fontSize="large" />
+        <button className="hamburger">
+          <MenuIcon fontSize="large"  onClick={() => setSidebar(!sidebar)} />
         </button>
       </nav>
       <div className={`sidebar ${sidebar ? 'sidebar-open' : ''}`}>
@@ -70,7 +68,7 @@ const Navbar = () => {
             <a href="#service">Services</a>
           </li>
           <li className="nav-item" onClick={closeSidebar}>
-            <a href="#awards">Awards</a>
+            <a href="#award">Awards</a>
           </li>
           <li className="nav-item" onClick={closeSidebar}>
             <a href="#contact">Contact</a>

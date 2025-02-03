@@ -14,7 +14,7 @@ import XIcon from '@mui/icons-material/X';
 
 const Contact = () => {
   return (
-    <section className='contact'>
+    <section className='contact' id='contact'>
 
         <div className='contact-main'>
         <div className="head-name">

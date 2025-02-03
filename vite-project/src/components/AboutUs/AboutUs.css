@@ -27,6 +27,7 @@
 .aboutus {
   width: 100%;
   height: 100vh;
+  scroll-margin: 50px;
   /* overflow-x: hidden; */
  /* padding-top: 6% ; */
 }

@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import './HomePage.css'
 import TextTransition, { presets } from 'react-text-transition'
-import { useNavigate } from 'react-router-dom'
 
 /**
  * @author Pavithran G
@@ -11,7 +10,6 @@ import { useNavigate } from 'react-router-dom'
 
 const PROFILES = ['FOUNDER/CEO', 'EDU ADVISOR', 'CONSULTANT']
 const HomePage = () => {
-  const nav = useNavigate()
   const [index, setIndex] = React.useState(0)
 
   useEffect(() => {
@@ -38,9 +36,9 @@ const HomePage = () => {
           path to global education and career success.
         </div>
         <section className="contact-bar">
-          <button className="get-in-touch-btn" onClick={() => nav("/contact")}>
+          <a className="get-in-touch-btn" href='#contact'>
               Get In Touch <span> → </span>
-          </button>
+          </a>
           <section className="cnt-icon x">
             <a target="_blank" href="https://x.com/rameshraju17014">
               <img className="icon" src="/images/x.svg" />

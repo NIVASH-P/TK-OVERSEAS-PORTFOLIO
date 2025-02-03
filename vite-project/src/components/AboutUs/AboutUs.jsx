@@ -10,7 +10,7 @@ import ArrowRightAltSharpIcon from "@mui/icons-material/ArrowRightAltSharp";
 
 const AboutUs = () => {
   return (
-    <div className="aboutus">
+    <div className="aboutus" id="about">
       <div className="aboutus-container aboutus-scoped">
         <div className="image-card">
           <div className="image">

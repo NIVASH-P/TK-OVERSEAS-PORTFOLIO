@@ -45,7 +45,7 @@ const ServicePage = () => {
         }
     ];
   return (
-    <section className="service-main">
+    <section className="service-main" id='service'>
       <div className="service-top">
         <p className="service-name">SERVICES</p>
         <p className="service-about">

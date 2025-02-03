@@ -79,7 +79,7 @@ const FeaturePage = () => {
   };
 
   return (
-    <section className={`Feature-main ${open ? 'blur-background' : ''}`}>
+    <section className={`Feature-main ${open ? 'blur-background' : ''}`} id='award'>
       <div className="features-top">
         <h1 className="header-award">MY AWARDS</h1>
         <h1 className="header-Features">RECENT <span>FEATURES</span></h1>
