@@ -6,11 +6,13 @@ a {
 }
 
 .home-page {
-  height: 100vh;
+  height: 100%;
+  /* margin-left: 5; */
   box-sizing: border-box;
   width: 100vw;
   padding: 1rem 6rem;
   padding-top: 5rem;
+  position: relative;
   background: hsla(208, 81%, 12%, 1);
   background: linear-gradient(
     90deg,

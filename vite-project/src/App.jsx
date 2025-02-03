@@ -20,10 +20,18 @@ function App() {
     <>
       {loading && <PreLoader />}
       {!loading && (
+        <div>
+          {/* <Navbar /> */}
         <Router>
           <Navbar />
+          <HomePage />
+          <AboutMe />
+          <FeaturePage />
+          <ServicePage />
+          <Experience/>
+          <Contact/>
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/home" element={<HomePage />} />
             <Route path="/preloader" element={<PreLoader />} />
             <Route path="/about" element={<AboutMe />} />
             <Route path='/contact' element={<Contact/>}/>
@@ -32,6 +40,7 @@ function App() {
             <Route path="/service" element={<ServicePage />} />
           </Routes>
         </Router>
+        </div>
       )}
     </>
   );
