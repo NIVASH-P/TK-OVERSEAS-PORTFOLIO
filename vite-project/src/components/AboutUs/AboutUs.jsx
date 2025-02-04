@@ -4,20 +4,20 @@
  * @returns {JSX.ELEMENT} These page returns about me component
  */
 
+import Experience from "../Experience/Experience";
 import "./AboutUs.css";
 import ArrowRightAltSharpIcon from "@mui/icons-material/ArrowRightAltSharp";
 
 const AboutUs = () => {
   return (
-    <div className="aboutus">
+    <div className="aboutus" id="about">
       <div className="aboutus-container aboutus-scoped">
         <div className="image-card slide-in">
           <div className="image">
-            <img src="/images/blured.png" alt="aboutUs-image" />
+            <img src="/images/blured2.png" alt="aboutUs-image" />
           </div>
         </div>
         <div className="aboutus-content">
-          <h2 className="aboutus-heading">ABOUT US</h2>
           <h1 className="aboutus-description">
             I AM FOUNDER OF <span className="aboutus-job">TK OVERSEAS</span>{" "}
           </h1>
@@ -55,6 +55,7 @@ const AboutUs = () => {
           <img src="/effect-2.svg" width={300} />
         </div>
       </div>
+      {/* <Experience /> */}
     </div>
   );
 };

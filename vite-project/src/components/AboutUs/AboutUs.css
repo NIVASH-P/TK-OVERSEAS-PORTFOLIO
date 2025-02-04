@@ -42,6 +42,9 @@
 .aboutus {
   width: 100%;
   height: 100vh;
+  scroll-margin: 50px;
+  /* overflow-x: hidden; */
+ /* padding-top: 6% ; */
 }
 
 .aboutus-roller {
@@ -75,6 +78,7 @@
 }
 
 .aboutus-content {
+  /* padding-top: 10%; */
   font-family: Space Grotesk, sans-serif;
   width: 30%;
   letter-spacing: 1px;

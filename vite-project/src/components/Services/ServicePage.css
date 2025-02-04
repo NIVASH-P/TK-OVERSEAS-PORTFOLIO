@@ -1,0 +1,146 @@
+.service-main {
+    display: flex;
+    flex-direction: column;
+    /* overflow-y: hidden; */
+    /* padding: 20px; */
+    background: hsla(247, 60%, 21%, 1);
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    overflow-x: hidden;
+    padding-bottom: 20px;
+/* background: linear-gradient(90deg, hsla(247, 60%, 21%, 1) 0%, hsla(244, 57%, 17%, 1) 57%, hsla(0, 2%, 11%, 1) 100%); */
+/* background: -moz-linear-gradient(90deg, hsla(247, 60%, 21%, 1) 0%, hsla(244, 57%, 17%, 1) 57%, hsla(0, 2%, 11%, 1) 100%); */
+    background: -webkit-linear-gradient(90deg, hsla(247, 60%, 21%, 1) 0%, hsla(244, 57%, 17%, 1) 57%, hsla(0, 2%, 11%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1C1554", endColorstr="#161345", GradientType=1 );
+    /* scrollbar-width: none; /* For Firefox */
+    /* -ms-overflow-style: none; */ 
+}
+/* .service-main::-webkit-scrollbar{
+    display: none;
+} */
+
+.service-top {
+    /* text-align: center; */
+    /* margin-bottom: 30px; */
+    margin-top: 7%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.service-name {
+    display: inline-block;
+    background: #221b44;
+    color: white;
+    border: none;
+    width: auto;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.service-about {
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.service-about span {
+    color: #0a8cff;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Ensure the image container occupies full height of the card */
+    overflow-x: hidden;
+    border-radius: 16px; /* Add rounded corners */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+    display: block;
+    border-radius: 16px; /* Add rounded corners for the image */
+}
+
+.image-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Covers the entire image */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    z-index: 1;
+    border-radius: 16px; /* Match the container's border radius */
+    pointer-events: none; /* Prevent interference with interaction */
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 20px; /* Position near the bottom */
+    left: 20px; /* Add padding from the left */
+    color: white;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    z-index: 2; /* Ensure text appears above the gradient */
+    width: calc(100% - 40px); /* Maintain padding */
+}
+
+.para-icon {
+    font-size: 40px;
+    width: 60px;
+    height: 60px;
+    color: white;
+    background: #0a8cff; /* Match the blue icon */
+    /* border: 2px solid white; */
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.p-header {
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.text-overlay hr {
+    margin: 10px 0;
+    border: 0;
+    height: 1px;
+    background: rgba(193, 173, 173, 0.5);
+}
+
+.text-overlay .rating {
+    margin-top: 10px;
+}

@@ -1,29 +1,349 @@
-.Feature-main{
-    margin: 0;
-    top: 0;
-    left: 0;
-    padding: 0;
-    background: hsla(247, 60%, 21%, 1);
-    background: linear-gradient(90deg, hsla(247, 60%, 21%, 1) 0%, hsla(244, 57%, 17%, 1) 57%, hsla(0, 2%, 11%, 1) 100%);
-    background: -moz-linear-gradient(90deg, hsla(247, 60%, 21%, 1) 0%, hsla(244, 57%, 17%, 1) 57%, hsla(0, 2%, 11%, 1) 100%);
-    background: -webkit-linear-gradient(90deg, hsla(247, 60%, 21%, 1) 0%, hsla(244, 57%, 17%, 1) 57%, hsla(0, 2%, 11%, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1C1554", endColorstr="#161345", GradientType=1 );
-    color: white;
-    width: 100%;
-    height: 100vh;
-}
-.features-top{
-    margin-top: 10px;
-    margin-left: 10px;
-}
-.header-award{
-    background: #063e70;
-    color: white;
-    border: 1px solid;
-    width: 150px;
-    padding: 2px;
-    border-radius: 10%;
-}
-.features-bottom{
+.Feature-main.blur-background {
+    filter: blur(5px);
+    pointer-events: none;
+  }
+  
+  .Feature-main {
+      padding: 0;
+      background: linear-gradient(90deg, #062c52 0%, #161345 100%);
+      color: white;
+      width: 100%;
+      /* position: fixed; */
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      /* z-index: 1; */
+    }
     
+    .features-top {
+    margin-top: 7%;
+    padding: 20px;
+    margin-left: 5%;
+  }
+  .feature-image {
+    width: 100%;
+    height: 100%; /* Adjust to fill the height of the dialog */
+    object-fit: cover; /* Ensure the image scales while maintaining its aspect ratio */
+  }
+  
+  
+  .header-award {
+    background: #0b559e9f;
+    color: white;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10%;
+    margin: 0 auto;
+  }
+  .header-Features span
+  {
+    color: #0b559e;
+  }
+  
+  .features-bottom {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-left: 5%;
+    margin-right: 2%;
+
+  }
+  
+  .card-details {
+    background: white;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card-details:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(14, 35, 189, 0.7);
+  }
+  
+  .card-img {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card-img img {
+    width: 100%;
+    height: 300px;
+    transition: filter 0.3s ease;
+  }
+  
+  .card-img:hover img {
+    filter: brightness(60%);
+  }
+  
+  .plus-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(14, 35, 189, 0.7);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .card-img:hover .plus-icon {
+    opacity: 1;
+  }
+  
+  .card-content {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card-header {
+    margin: 0;
+    color: #161345;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .card-detail {
+    margin: 0;
+    color: gray;
+  }
+  
+  .card-right {
+    width: 40px;
+    height: 40px;
+    /* background: blue; Set background color to blue */
+    border-radius: 50%; /* Keep the circular shape */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .card-right p {
+    margin: 0; /* Remove any default margin */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0b559e;
+  }
+  
+  .card-right svg {
+    width: 100%; /* Make the icon fill the full width of the container */
+    height: 100%; /* Make the icon fill the full height of the container */
+    color: blue; /* Set the icon color to white for contrast */
+  }
+  
+  
+  
+  .card-right:hover {
+    background: rgba(0, 0, 255, 0.5);
+  }
+  
+  .empty-state {
+    text-align: center;
+    font-size: 18px;
+    color: lightgray;
+  }
+  .carousel-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  overflow: hidden;
+  width: 100%;
+  margin-top: 20px;
+  padding: 0 5%; /* Add padding for proper alignment */
 }
+
+.carousel {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  width: 90%;
+  margin: 0;
+  box-sizing: border-box;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none;
+}
+.carousel::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
+  }
+
+.card-details {
+  flex: 0 0 calc(25% - 20px); /* Ensure 4 cards fit in one row with proper spacing */
+  margin: 0 10px; /* Equal spacing between cards */
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card-img img {
+  width: 100%;
+  height: 300px; /* Maintain the aspect ratio */
+  border-radius: 10px 10px 0 0;
+}  
+  .card-details:hover {
+    transform: translateY(-10px);
+  }
+  
+  .pagination-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot.active {
+    background-color: blue;
+  }
+  @media screen and (max-width: 1224px)  {
+    .card-details {
+      flex: 0 0 calc(33.33% - 20px); 
+    }
+  }
+  @media screen and (max-width: 920px)  {
+    .card-details {
+      flex: 0 0 calc(50% - 20px); 
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .card-details {
+      flex: 0 0 calc(100% - 15px); 
+    }
+    DialogContent{
+
+    }
+  }
+/* Default styles */
+.dialog-content {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+  }
+  
+  .image-container {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .feature-image {
+    width: 100%;
+    height: 75vh;
+    border-radius: 8px;
+  }
+  
+  .text-content {
+    flex: 1;
+    overflow: hidden;
+  }
+  
+  /* Media query for tablet screens */
+  @media screen and (max-width: 1024px) {
+    .dialog-content {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .image-container {
+      min-width: 0;
+      flex: none;
+    }
+  
+    .feature-image {
+      height: 60vh; /* Adjust height for tablets */
+    }
+  }
+  
+  /* Media query for mobile screens */
+  /* Media query for mobile screens */
+@media screen and (max-width: 768px) {
+    /* Ensure dialog content stacks vertically */
+    .MuiDialogContent-root{
+        display: none;
+    }
+    .dialog-content {
+        display: none; /* Hide the dialog box entirely */
+      }
+    
+      .MuiDialog-paper {
+        display: none; /* Ensure the dialog container is hidden */
+      }
+  }
+  @media screen and (max-width: 400px) {
+    .dialog-content {
+      display: none; /* Hide the dialog box entirely */
+    }
+  
+    .MuiDialog-paper {
+      display: none; /* Ensure the dialog container is hidden */
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .home-page {
+      flex-direction: column;
+      text-align: center;
+      padding: 2rem;
+    }
+  
+    .home-left,
+    .home-right {
+      width: 100%;
+      align-items: center;
+    }
+  
+    .hello-msg {
+      font-size: 3rem;
+    }
+  
+    .name-in-box {
+      font-size: 0.8rem;
+      letter-spacing: 0.3rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .hello-msg {
+      font-size: 2rem;
+    }
+  
+    .main-img {
+      width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    
+  }
+  
+  /* Mobile Styles */
+  @media screen and (max-width: 480px) {
+    
+  }
+  
+  
+  
