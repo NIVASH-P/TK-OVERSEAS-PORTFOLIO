@@ -11,7 +11,7 @@ const AboutUs = () => {
   return (
     <div className="aboutus">
       <div className="aboutus-container aboutus-scoped">
-        <div className="image-card">
+        <div className="image-card slide-in">
           <div className="image">
             <img src="/images/blured.png" alt="aboutUs-image" />
           </div>
