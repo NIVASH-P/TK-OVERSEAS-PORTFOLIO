@@ -1,13 +1,14 @@
 .service-main {
     display: flex;
     flex-direction: column;
+    /* overflow-y: hidden; */
     /* padding: 20px; */
     background: hsla(247, 60%, 21%, 1);
     width: 100%;
-    height: 100vh;
+    height: 100%;
     /* position: absolute; */
     overflow-x: hidden;
-    z-index: -1;
+    padding-bottom: 20px;
 /* background: linear-gradient(90deg, hsla(247, 60%, 21%, 1) 0%, hsla(244, 57%, 17%, 1) 57%, hsla(0, 2%, 11%, 1) 100%); */
 /* background: -moz-linear-gradient(90deg, hsla(247, 60%, 21%, 1) 0%, hsla(244, 57%, 17%, 1) 57%, hsla(0, 2%, 11%, 1) 100%); */
     background: -webkit-linear-gradient(90deg, hsla(247, 60%, 21%, 1) 0%, hsla(244, 57%, 17%, 1) 57%, hsla(0, 2%, 11%, 1) 100%);
