@@ -20,19 +20,6 @@ const experiences = [
     version: "Angular 8/9/10",
   },
   {
-    title: "Software Engineer",
-    company: "BPO Management Inc",
-    technologies: [
-      "RxJS",
-      "Django",
-      "PHP",
-      "JavaScript",
-      "DHTMLX Gantt",
-    ],
-    duration: "Jan 2025",
-    version: "Angular 7/8",
-  },
-  {
     title: "Proprietor",
     company: "TK OVERSEAS EDUCATION CONSULTANCY",
     technologies: [
@@ -43,6 +30,19 @@ const experiences = [
       "DHTMLX Gantt",
     ],
     duration: "Jan 2014 - Jul 2017",
+    version: "Angular 7/8",
+  },
+  {
+    title: "Software Engineer",
+    company: "BPO Management Inc",
+    technologies: [
+      "RxJS",
+      "Django",
+      "PHP",
+      "JavaScript",
+      "DHTMLX Gantt",
+    ],
+    duration: "Jan 2025",
     version: "Angular 7/8",
   },
   {

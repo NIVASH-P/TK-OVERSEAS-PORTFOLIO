@@ -197,8 +197,8 @@
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    height: auto; /* Adjust height to fit content */
-    padding: 20px; /* Add padding to prevent content from touching edges */
+    height: auto; 
+    padding: 20px; 
   }
 
   .aboutus-content {
