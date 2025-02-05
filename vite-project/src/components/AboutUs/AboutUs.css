@@ -42,9 +42,6 @@
 .aboutus {
   width: 100%;
   height: 100vh;
-  scroll-margin: 50px;
-  /* overflow-x: hidden; */
- /* padding-top: 6% ; */
 }
 
 .aboutus-roller {
@@ -78,7 +75,6 @@
 }
 
 .aboutus-content {
-  /* padding-top: 10%; */
   font-family: Space Grotesk, sans-serif;
   width: 30%;
   letter-spacing: 1px;
@@ -126,6 +122,7 @@
   font-size: 1em;
   border-radius: 25px;
   border-color: transparent;
+  margin-bottom: 10%;
 }
 
 .aboutus-button:hover {
@@ -139,6 +136,7 @@
   justify-content: space-between;
   padding-top: 10px;
   padding-bottom: 25px;
+
   gap: 20px;
 }
 
@@ -148,7 +146,7 @@
   border-radius: 10px;
   padding: 20px;
   width: 30%; /* Fixed width */
-  height: 150px; /* Fixed height */
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -185,26 +183,30 @@
   border-radius: 10px; /* Optional: Add rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
   background-color: #fff; /* Optional: Set background color */
+  /* margin-top: 50px; */
 }
 
 .image {
-  width: 400px; /* Set fixed width */
+  /* width: 400px; */
   height: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* .image img {
-  max-width: 100%;
-  max-height: 200%;
-  object-fit: contain;
-} */
-
 /* Media Queries */
 
 /* For tablets */
-@media (min-width: 601px) and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
+  .aboutus {
+    height: 100%;
+  }
+  .image {
+    display: none;
+  }
+  .image-card {
+    display: none;
+  }
   .aboutus-roller {
     display: none;
   }
@@ -227,13 +229,30 @@
 
   .card {
     width: 80%;
-    height: auto; /* Adjust height to fit content */
-    margin-bottom: 20px; /* Add margin between cards */
+    height: 100%;
+  }
+
+  .image-card {
+    width: 300px; /* Adjust width for tablets */
+    height: 350px; /* Adjust height for tablets */
+  }
+
+  .image {
+    height: auto;
   }
 }
 
 /* For mobile devices */
-@media (max-width: 600px) {
+@media screen and (max-width: 480px) {
+  .aboutus {
+    height: 100%;
+  }
+  .image {
+    display: none;
+  }
+  .image-card {
+    display: none;
+  }
   .aboutus-roller {
     display: none;
   }
@@ -256,7 +275,61 @@
 
   .card {
     width: 90%;
+    height: 100%; /* Adjust height to fit content */
+    /* margin-bottom: 20px;  */
+  }
+
+  .image-card {
+    width: 100%; /* Adjust width for tablets */
+    height: auto; /* Adjust height for tablets */
+  }
+
+  .image {
     height: auto; /* Adjust height to fit content */
-    margin-bottom: 20px; /* Add margin between cards */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aboutus {
+    height: 100%;
+  }
+  .image {
+    display: none;
+  }
+  .image-card {
+    display: none;
+  }
+  .aboutus-roller {
+    display: none;
+  }
+  .aboutus-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: auto; /* Adjust height to fit content */
+    padding: 20px; /* Add padding to prevent content from touching edges */
+  }
+
+  .aboutus-content {
+    width: 80%;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    height: 100%;
+  }
+
+  .image-card {
+    width: 300px; /* Adjust width for tablets */
+    height: 350px; /* Adjust height for tablets */
+  }
+
+  .image {
+    height: auto; /* Adjust height to fit content */
   }
 }

@@ -4,13 +4,13 @@
  * @returns {JSX.ELEMENT} These page returns about me component
  */
 
-import Experience from "../Experience/Experience";
+// import Experience from "../Experience/Experience";
 import "./AboutUs.css";
 import ArrowRightAltSharpIcon from "@mui/icons-material/ArrowRightAltSharp";
 
 const AboutUs = () => {
   return (
-    <div className="aboutus" id="about">
+    <section className="aboutus" id="about">
       <div className="aboutus-container aboutus-scoped">
         <div className="image-card slide-in">
           <div className="image">
@@ -56,7 +56,7 @@ const AboutUs = () => {
         </div>
       </div>
       {/* <Experience /> */}
-    </div>
+    </section>
   );
 };
 
