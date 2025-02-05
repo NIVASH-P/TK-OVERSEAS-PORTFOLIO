@@ -20,6 +20,7 @@ const experiences = [
     version: "Angular 8/9/10",
   },
   {
+
     title: "On-Site-Supervision",
     company: "TK OVERSEAS EDUCATION CONSULTANCY",
     technologies: ["RxJS", "Django", "PHP", "JavaScript", "DHTMLX Gantt"],
@@ -31,6 +32,7 @@ const experiences = [
     company: "Saudi Arabia",
     technologies: ["RxJS", "Django", "PHP", "JavaScript", "DHTMLX Gantt"],
     duration: "Jul 2014 - Jun 2016",
+
     version: "Angular 7/8",
   },
   {
