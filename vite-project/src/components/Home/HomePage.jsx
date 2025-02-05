@@ -36,26 +36,28 @@ const HomePage = () => {
           path to global education and career success.
         </div>
         <section className="contact-bar">
-          <a className="get-in-touch-btn" href='#contact'>
-              Get In Touch <span> → </span>
+          <a className="get-in-touch-btn" href="#contact">
+            Get In Touch <span> → </span>
           </a>
-          <section className="cnt-icon x">
-            <a target="_blank" href="https://x.com/rameshraju17014">
-              <img className="icon" src="/images/x.svg" />
-            </a>
-          </section>
-          <section className="cnt-icon instagram">
-            <a target="_blank" href="https://www.instagram.com/tkoverseas">
-              <img className="icon" src="/images/instagram.svg" />
-            </a>
-          </section>
-          <section className="cnt-icon linkedin">
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/ramesh-raju-428114172"
-            >
-              <img className="icon" src="/images/linkedin.svg" />
-            </a>
+          <section className='contact-icons'>
+            <section className="cnt-icon x">
+              <a target="_blank" href="https://x.com/rameshraju17014">
+                <img className="icon" src="/images/x.svg" />
+              </a>
+            </section>
+            <section className="cnt-icon instagram">
+              <a target="_blank" href="https://www.instagram.com/tkoverseas">
+                <img className="icon" src="/images/instagram.svg" />
+              </a>
+            </section>
+            <section className="cnt-icon linkedin">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/ramesh-raju-428114172"
+              >
+                <img className="icon" src="/images/linkedin.svg" />
+              </a>
+            </section>
           </section>
         </section>
 
