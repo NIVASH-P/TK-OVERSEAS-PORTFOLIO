@@ -19,7 +19,8 @@ const Contact = () => {
         <div className='contact-main'>
         <div className="head-name">
                   <h1>Let’s Discuss</h1>
-                  <p>Always available for Carreer Conselling if the right project comes along,<br /> Feel free to contact me.</p>
+                  <p>&nbsp;</p>
+                  {/* <p>Always available for Carreer Conselling if the right project comes along,<br /> Feel free to contact me.</p> */}
             </div>
             <div className="row">
                <div className="col1">
@@ -57,7 +58,7 @@ const Contact = () => {
                       </div>
                       </div>
                       <label htmlFor="name">SUBJECT</label>
-                      <input type="text" placeholder='Subject*' required/>
+                      <input type="text" placeholder='Subject*' required/><br />
                       <label htmlFor="name">YOUR MESSAGE</label>
                       <textarea name="message" id="" placeholder='Your Message*' > </textarea>
 
