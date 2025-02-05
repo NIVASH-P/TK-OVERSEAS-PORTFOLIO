@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 
 a {
   text-decoration: none;
@@ -23,7 +23,7 @@ a {
   display: flex;
   flex-direction: row;
   overflow-x: hidden;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .home-left {
@@ -163,6 +163,7 @@ a {
   }
 }
 
+/* these mediaQueries for most of mobile devices */
 @media screen and (max-width: 480px) {
   .hello-msg {
     font-size: 2rem;
